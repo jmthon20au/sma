@@ -1,0 +1,283 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #000;
+}
+
+#welcome-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.welcome-container {
+    text-align: center;
+    padding: 2rem;
+    background-color: #222;
+    border-radius: 80px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.welcome-container h1 {
+    margin-bottom: 1rem;
+}
+
+.welcome-container input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.welcome-container button {
+    padding: 0.5rem 1.5rem;
+    background-color: #ffd700;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    color: #ffd700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main section {
+    padding: 2rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #000;
+    color: #fff;
+}
+.contact-numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    background-color: #222;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.call-button {
+    background-color: #ffd700;
+    color: #000;
+    padding: 0.3rem 0.8rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.call-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.social-button.facebook {
+    background-color: #4267B2;
+}
+
+.social-button.instagram {
+    background-color: #E1306C;
+}
+
+.social-button.telegram {
+    background-color: #0088CC;
+}
+
+.social-button:hover {
+    opacity: 0.8;
+}
+
+#gallery {
+    padding: 2rem;
+    text-align: center;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+#logo-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logo-image {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px; /* يمكن إزالة هذا إذا لم ترغب بحواف مستديرة */
+}
+  .back-button {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 5px;
+      width: fit-content;
+      margin: 20px;
+      transition: all 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #4CAF50;
+      transform: scale(1.1);
+    }
+
+    .back-button i {
+      margin-left: 10px;
+    }
+        #scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: #ff40d2;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease-in-out;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 1000;
+    }
+      #scrollToTop:hover {
+      background-color: #4CAF50;
+      transform: scale(1.1);
+    }
+
+    #scrollToTop.show {
+      opacity: 1;
+      visibility: visible;
+    }
+        #scrollToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: #000000;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease-in-out;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 1000;
+    }
+
+    #scrollToTop:hover {
+      background-color: #ffbd40;
+      transform: scale(1.1);
+    }
+
+    #scrollToTop.show {
+      opacity: 1;
+      visibility: visible;
+    }
