@@ -2,8 +2,8 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #000;
+    background-color: #000000;
+    color: #ffdc00;
 }
 
 #welcome-screen {
@@ -52,7 +52,7 @@ body {
 }
 
 header {
-    background-color: #000;
+    background-color: #ebcc24ed;
     color: #fff;
     padding: 1rem 2rem;
     display: flex;
@@ -61,7 +61,7 @@ header {
 }
 
 header .logo h1 {
-    margin: 0;
+    margin: 10;
     color: #ffd700;
 }
 
@@ -92,7 +92,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1.3rem;
     margin-bottom: 1.5rem;
 }
 
@@ -103,7 +103,7 @@ footer {
     width: 250px;
     background-color: #222;
     padding: 0.5rem 1rem;
-    border-radius: 8px;
+    border-radius: 80px;
     color: #fff;
 }
 
@@ -112,7 +112,7 @@ footer {
     color: #000;
     padding: 0.3rem 0.8rem;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 50px;
     font-weight: bold;
     transition: background-color 0.3s;
 }
@@ -189,13 +189,13 @@ footer {
 }
 #logo-section {
     text-align: center;
-    margin: 20px 0;
+    margin: 2px 100;
 }
 
 .logo-image {
     max-width: 200px;
     height: auto;
-    border-radius: 10px; /* يمكن إزالة هذا إذا لم ترغب بحواف مستديرة */
+    border-radius: 100px; /* يمكن إزالة هذا إذا لم ترغب بحواف مستديرة */
 }
   .back-button {
       display: flex;
@@ -217,7 +217,7 @@ footer {
       transform: scale(1.1);
     }
 
-    .back-button i {
+.back-button i {
       margin-left: 10px;
     }
         #scrollToTop {
